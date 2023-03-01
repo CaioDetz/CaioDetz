@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
@@ -9,13 +10,13 @@ export default function Header() {
       <span className="text-2xl">Caio Detz</span>
 
       <nav className="hidden md:flex duration-200">
-        <Link className="px-4" href={"#"}>
+        <Link className="px-4" href={"/"}>
           Home
         </Link>
-        <Link className="px-4" href={"#"}>
+        <Link className="px-4" href={"/projetos"}>
           Projetos
         </Link>
-        <Link className="px-4" href={"#"}>
+        <Link className="px-4" href={"/contato"}>
           Contato
         </Link>
       </nav>
@@ -32,23 +33,23 @@ export default function Header() {
         <div
           className={`${
             showModal == true ? "h-52" : "h-0 opacity-0"
-          } flex flex-col h-52 absolute justify-center items-center duration-300 bottom-0 left-0 w-full sha`}
+          } flex flex-col h-52 bg-white absolute justify-center items-center duration-300 bottom-0 left-0 w-full sha`}
         >
           <Link
             className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
-            href={"#"}
+            href={"/"}
           >
             Home
           </Link>
           <Link
             className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
-            href={"#"}
+            href={"/projetos"}
           >
             Projetos
           </Link>
           <Link
             className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
-            href={"#"}
+            href={"/contato"}
           >
             Contato
           </Link>
