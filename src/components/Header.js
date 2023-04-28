@@ -25,14 +25,14 @@ export default function Header() {
         {showModal == true ? <button
           className={"z-50"}
           onClick={() => {
-            setShowModal(!showModal);
+            setShowModal(false);
           }}
         ><MdClose size={38} color={"#000"} /></button>
         : 
         <button
           className={"z-50"}
           onClick={() => {
-            setShowModal(!showModal);
+            setShowModal(true);
           }}
         ><MdMenu size={38} color={"#000"} /></button>
         }
