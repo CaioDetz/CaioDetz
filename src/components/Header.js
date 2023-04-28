@@ -23,6 +23,7 @@ export default function Header() {
 
       <nav className="flex md:hidden duration-200">
         <button
+          className={"z-50"}
           onClick={() => {
             setShowModal(!showModal);
           }}
