@@ -10,11 +10,11 @@ module.exports = {
       keyframes: {
         open: {
           '0%': { width: '0%' },
-          '100%': { width: '100%' },
+          '100%': { width: '100%', leaft:"0" },
         },
         close: {
           '0%': { width: '100%' },
-          '100%': { width: '0%' },
+          '100%': { width: '0%', leaft:"-100%" },
         },
         
       }
