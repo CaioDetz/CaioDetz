@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
      animation: {
-        'open': 'open .5s linear infinite',
+        'open': 'open .5s linear forwards',
       },
       keyframes: {
         open: {
