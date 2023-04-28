@@ -5,14 +5,14 @@ module.exports = {
     extend: {
      animation: {
         'open': 'open .5s linear forwards',
-        'close': 'open .5s linear forwards',
+        'close': 'close .5s linear forwards',
       },
       keyframes: {
         open: {
           '0%': { width: '0%' },
           '100%': { width: '100%' },
         },
-        open: {
+        close: {
           '0%': { width: '100%' },
           '100%': { width: '0%' },
         },
