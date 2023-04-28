@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 
 export default function Header() {
-  const [showModal, setShowModal] = useState(null);
+  const [showModal, setShowModal] = useState("FECHADO");
   return (
     <div className="w-full px-10 duration-200 md:px-40 py-5 flex justify-between">
       <span className="text-2xl">Caio Detz</span>
@@ -28,7 +28,7 @@ export default function Header() {
             setShowModal(!showModal);
           }}
         >
-          {showModal == true ? <MdClose size={38} color={"#000"} /> : <MdMenu size={38} color={"#000"} />}
+          {showModal == true || showModal == false ? <MdClose size={38} color={"#000"} /> : <MdMenu size={38} color={"#000"} />}
           
         </button>
 
