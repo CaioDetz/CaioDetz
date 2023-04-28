@@ -37,7 +37,7 @@ export default function Header() {
             showModal === true && "animate-open"
           } ${
             showModal === false && "animate-close"
-          } flex flex-col h-screen bg-white absolute justify-center items-center duration-300 left-0 top-0 overflow-hidden`}
+          } flex flex-col h-screen w-0 bg-white absolute justify-center items-center duration-300 left-0 top-0 overflow-hidden`}
         >
           <Link
             className={`py-4 text-3xl`}
