@@ -32,8 +32,8 @@ export default function Header() {
 
         <div
           className={`${
-            showModal == true ? "h-52" : "h-0 opacity-0"
-          } flex flex-col h-52 bg-white absolute justify-center items-center duration-300 bottom-0 left-0 w-full sha`}
+            showModal == true ? "animate-open" : "w-0 opacity-0"
+          } flex flex-col h-screen bg-white absolute justify-center items-center duration-300 left-0 top-0 w-["150px"] sha`}
         >
           <Link
             className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
