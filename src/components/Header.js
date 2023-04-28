@@ -34,7 +34,9 @@ export default function Header() {
 
         <div
           className={`${
-            showModal === true ? "animate-open" : "animate-close"
+            showModal === true && "animate-open"
+          } ${
+            showModal === false && "animate-close"
           } flex flex-col h-screen bg-white absolute justify-center items-center duration-300 left-0 top-0 overflow-hidden`}
         >
           <Link
