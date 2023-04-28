@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -28,7 +28,8 @@ export default function Header() {
             setShowModal(!showModal);
           }}
         >
-          <MdMenu size={38} color={"#000"} />
+          {showModal == true ? <MdClose size={38} color={"#000"} /> : <MdMenu size={38} color={"#000"} />}
+          
         </button>
 
         <div
@@ -37,19 +38,19 @@ export default function Header() {
           } flex flex-col h-screen bg-white absolute justify-center items-center duration-300 left-0 top-0 w-["150px"] sha`}
         >
           <Link
-            className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
+            className={`py-4 text-3xl`}
             href={"/"}
           >
             Home
           </Link>
           <Link
-            className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
+            className={`py-4 text-3xl`}
             href={"/projetos"}
           >
             Projetos
           </Link>
           <Link
-            className={`${showModal == true ? "" : "hidden"} py-4 text-3xl`}
+            className={`py-4 text-3xl`}
             href={"/contato"}
           >
             Contato
