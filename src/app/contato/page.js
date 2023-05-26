@@ -16,63 +16,72 @@ export default function Contato() {
   };
   return (
     <main className="flex flex-col flex-1 flex-wrap justify-center items-center ">
-      <Card className="flex flex-1 flex-col items-center">
-        <h1 className="md:text-4xl text-2xl text-center font-semibold md:my-5">
-          Minhas Redes Sociais:
-        </h1>
-        <div className="flex felx-row flex-wrap w-96 felx-1">
+      <Card className="flex flex-1 flex-col items-center m-12">
+        <div className="flex flex-row gap-5 flex-wrap md:w-fit w-full justify-center items-center felx-1">
           <Link
-            href={"/CONTATO"}
-            className="flex items-center justify-center md:gap-2 md:p-5 "
+            href={
+              "https://wa.me/5566999348031?text=Ol%C3%A1%20Vim%20Pelo%20Seu%20Portfolio"
+            }
+            className="flex items-center justify-center md:gap-2 md:w-52 md:h-16 p-5 md:p-0 hover:border hover:border-[#2BB741] rounded-lg duration-300"
             target="_blank"
           >
             <BsWhatsapp size={35} color="#2BB741" />
-            <label>Whatsapp</label>
+            <label className="hidden md:inline-block text-lg font-medium">
+              Whatsapp
+            </label>
           </Link>
           <Link
-            href={"/CONTATO"}
-            className="flex items-center justify-center md:gap-2 md:p-5 "
+            href={"https://m.facebook.com/people/Caio-Detz/100012369098929/"}
+            className="flex items-center justify-center md:gap-2 md:w-52 md:h-16 p-5 md:p-0 hover:border hover:border-[#1877F2] rounded-lg duration-300"
             target="_blank"
           >
             <BsFacebook size={35} color="#1877F2" />
-            <label>Facebook</label>
+            <label className="hidden md:inline-block text-lg font-medium">
+              Facebook
+            </label>
           </Link>
           <Link
-            href={"/CONTATO"}
-            className="flex items-center justify-center md:gap-2 md:p-5 "
+            href={"https://instagram.com/caiodetz"}
+            className="flex items-center justify-center md:gap-2 md:w-52 md:h-16 p-5 md:p-0 hover:border hover:border-[#5851D8] rounded-lg duration-300"
             target="_blank"
           >
             <BsInstagram size={35} color="#5851D8" />
-            <label>Instagram</label>
+            <label className="hidden md:inline-block text-lg font-medium">
+              Instagram
+            </label>
           </Link>
           <Link
-            href={"/CONTATO"}
-            className="flex items-center justify-center md:gap-2 md:p-5 "
+            href={"https://br.linkedin.com/in/caio-detz-927345187"}
+            className="flex items-center justify-center md:gap-2 md:w-52 md:h-16 p-5 md:p-0 hover:border hover:border-[#0e76a8] rounded-lg duration-300"
             target="_blank"
           >
             <BsLinkedin size={35} color="#0e76a8" />
-            <label>Linkedin</label>
+            <label className="hidden md:inline-block text-lg font-medium">
+              Linkedin
+            </label>
           </Link>
           <Link
-            href={"/CONTATO"}
-            className="flex items-center justify-center md:gap-2 md:p-5 "
+            href={"https://github.com/kard-py"}
+            className="flex items-center justify-center md:gap-2 md:w-52 md:h-16 p-5 md:p-0 hover:border hover:border-[#000] rounded-lg duration-300"
             target="_blank"
           >
             <BsGithub size={35} color="" />
-            <label>GitHub</label>
+            <label className="hidden md:inline-block text-lg font-medium">
+              GitHub
+            </label>
           </Link>
         </div>
       </Card>
       <div className="flex flex-1 items-center justify-center w-full my-4 gap-5">
-        <div className="bg-gray-400 w-96 h-[0.5px] " />
+        <div className="bg-gray-400 w-52 h-[0.5px] " />
         <span className="font-semibold text-2xl">OU</span>
-        <div className="bg-gray-400 w-96 h-[0.5px] " />
+        <div className="bg-gray-400 w-52 h-[0.5px] " />
       </div>
-      <Card className="flex flex-1 flex-col items-center">
+      <Card className="flex flex-1 flex-col items-center mb-10">
         <h1 className="md:text-4xl text-2xl text-center font-semibold md:my-5">
           Me Envie Uma Mensagem
         </h1>
-        <span className="flex flex-1 text-sm md:text-xl text-center opacity-60 mx-10">
+        <span className="flex flex-1 text-sm md:text-xl text-center opacity-100 text-gray-400 mx-10">
           As Mensagens serão enviadas via e-mail e serão respondias <br /> o
           quanto antes possivel, tenha paciencia e comprenção.
         </span>
