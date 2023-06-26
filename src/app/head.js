@@ -29,7 +29,6 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Caio Detz Dev" />
       <link rel="icon" href="/favicon.ico" />
-      <script src="//code.tidio.co/xax3zuuzkrvsc6jxzb0m8oohfeomcb4d.js" async></script>
     </>
   );
 }
