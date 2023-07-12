@@ -85,7 +85,7 @@ export default function Contato() {
           As Mensagens serão enviadas via e-mail e serão respondias <br /> o
           quanto antes possivel, tenha paciencia e comprenção.
         </span>
-        <form className="flex flex-1 w-full flex-col items-center justify-center p-5 md:px-24 md:pb-14 md:pt-5">
+        <form className="flex flex-1 w-full flex-col items-center justify-center p-5 md:px-24 md:pb-14 md:pt-5" netlify>
           <input
             type="text"
             placeholder="Nome:"
