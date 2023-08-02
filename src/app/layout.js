@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "@/components/Header";
+import Chat from "@/components/Chat";
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +8,9 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <Header />
-        {children}
+        <Chat>
+          {children}
+        </Chat>
       </body>
     </html>
   );
