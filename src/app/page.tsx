@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className="h-full my-36 w-full text-black flex flex-col xl:px-64 px-10">
+      <section className="h-full mt-24 mb-36 w-full text-black flex flex-col xl:px-64 px-10">
         <h1 className="text-4xl">Olá.</h1>
         <h1 className="text-4xl font-semibold">Eu Sou Caio Detz.</h1>
         <span className="text-4xl">
