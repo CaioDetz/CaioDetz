@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Header() {
   return (
-    <header className="flex w-full items-center justify-between py-14 mb-52">
+    <header className="flex w-full items-center justify-between py-14 xl:px-64 px-10">
       <div className="text-2xl font-bold text-black">C</div>
       <nav className="xl:flex hidden gap-16">
         <div className="text-xl font-bold text-black cursor-pointer">Home</div>

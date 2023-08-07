@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className + " xl:px-64 px-10 text-zinc-700"}>
+      <body className={inter.className + " text-zinc-700"}>
         {children}
       </body>
     </html>
