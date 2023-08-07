@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Header from "@/components/Header";
-import { BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
-import Link from "next/link";
 import Card from "@/components/Card";
+import TalkMe from "@/components/TalkMe";
 export default function Home() {
   return (
     <>
@@ -22,36 +20,7 @@ export default function Home() {
           React, React-Native, NextJs, Flutter, entre outros.
         </p>
       </section>
-
-      <section className="bg-black text-white w-full xl:px-64 px-10 py-24 mb-36 gap-5">
-        <h1 className="text-4xl mb-24">Vamos Conversar.</h1>
-        <p className="text-2xl mb-3">
-          Me envie um email:
-          <br className="md:hidden visible" /> contato@caiodetz.com.
-        </p>
-        <p className="text-2xl">
-          Ou uma mensagem:
-          <br className="md:hidden visible" /> +55 (66) 9 9934-8031.
-        </p>
-        <div className="mt-5">
-          <p className="text-2xl mb-4">Minhas redes sociais</p>
-          <div className="flex gap-5">
-            <Link target="_blank" href="https://instagram.com/caiodetz">
-              <BsInstagram size={24} color="#FFF" />
-            </Link>
-            <Link target="_blank" href="https://facebook.com/caiodetz">
-              <BsFacebook size={24} color="#FFF" />
-            </Link>
-            <Link
-              target="_blank"
-              href="https://br.linkedin.com/in/caio-detz-0395b7270"
-            >
-              <BsLinkedin size={24} color="#FFF" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
+      <TalkMe />
       <section className="h-full my-36 w-full text-black flex flex-col xl:px-64 px-10">
         <h1 className="text-4xl mb-12">Projetos:</h1>
         <div className="flex flex-row w-full gap-7 overflow-x-scroll scroll-smooth">
