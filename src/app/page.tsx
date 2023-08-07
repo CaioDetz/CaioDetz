@@ -1,10 +1,11 @@
 import Header from "@/components/Header";
-import Card from "@/components/Card";
-import TalkMe from "@/components/TalkMe";
+import TalkToMe from "@/components/TalkToMe";
+import Works from "@/components/Works";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header active={"Home"} />
       <section className="h-full mt-24 mb-36 w-full text-black flex flex-col xl:px-64 px-10">
         <h1 className="text-4xl">Olá.</h1>
         <h1 className="text-4xl font-semibold">Eu Sou Caio Detz.</h1>
@@ -14,28 +15,52 @@ export default function Home() {
         <span className="text-4xl">Com sede em Sorriso, Brasil.</span>
 
         <p className="md:w-[50rem] mt-24 text-2xl">
-          Com mais de 7 anos de experiência em programação, fundei a Harpia,
-          uma empresa voltada para o ramo de desenvolvimento de software.
-          Algumas das minhas experiências incluem o uso de frameworks como
-          React, React-Native, NextJs, Flutter, entre outros.
+          Com mais de 7 anos de experiência em programação, fundei a Harpia, uma
+          empresa voltada para o ramo de desenvolvimento de software. Algumas
+          das minhas experiências incluem o uso de frameworks como React,
+          React-Native, NextJs, Flutter, entre outros.
         </p>
       </section>
-      <TalkMe />
-      <section className="h-full my-36 w-full text-black flex flex-col xl:px-64 px-10">
-        <h1 className="text-4xl mb-12">Projetos:</h1>
-        <div className="flex flex-row w-full gap-7 overflow-x-scroll scroll-smooth">
-          <Card
+
+      <TalkToMe.Root>
+        <TalkToMe.Title text="Vamos Conversar." />
+        <TalkToMe.LineSection>
+          <TalkToMe.Line text="Me mande uma Mensagem: +55 (66) 9 9934-8031." />
+          <TalkToMe.Line text="Ou mande um E-mail: contato@caiodetz.com." />
+        </TalkToMe.LineSection>
+        <TalkToMe.Section>
+          <TalkToMe.SectionTitle text="Minhas Redes Sociais:" />
+          <TalkToMe.Links>
+            <TalkToMe.Link href="https://instagram.com/caiodetz">
+              <BsInstagram size={24} color="#FFF" />
+            </TalkToMe.Link>
+            <TalkToMe.Link href="https://facebook.com/caiodetz">
+              <BsFacebook size={24} color="#FFF" />
+            </TalkToMe.Link>
+            <TalkToMe.Link href="https://br.linkedin.com/in/caio-detz-927345187">
+              <BsLinkedin size={24} color="#FFF" />
+            </TalkToMe.Link>
+          </TalkToMe.Links>
+        </TalkToMe.Section>
+      </TalkToMe.Root>
+
+      <Works.Root>
+        <Works.Title text="Trabalhos:" />
+        <Works.Carrusel>
+          <Works.Card
+            href={"https://miumiu.caiodetz.com"}
             title="Miu Miu App Flutter"
             src="https://miumiu.caiodetz.com/icons/Icon-512.png"
             content="Um Aplivativo para Gerenciamento Comercial de uma Lojinha no Instagram @_miu.miu_0"
           />
-          <Card
+          <Works.Card
+            href={"https://flutter.caiodetz.com"}
             title="Cartão de Visita App Flutter"
             src="https://flutter.caiodetz.com/icons/Icon-512.png"
             content="Um Aplivativo para Cartão de Visita Com alumas Informações"
           />
-        </div>
-      </section>
+        </Works.Carrusel>
+      </Works.Root>
     </>
   );
 }
