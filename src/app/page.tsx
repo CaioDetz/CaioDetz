@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import TalkToMe from "@/components/TalkToMe";
 import Works from "@/components/Works";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsInstagram } from "react-icons/bs";
 export default function Home() {
   return (
     <>
@@ -34,11 +34,9 @@ export default function Home() {
             <TalkToMe.Link href="https://instagram.com/caiodetz">
               <BsInstagram size={24} color="#FFF" />
             </TalkToMe.Link>
-            <TalkToMe.Link href="https://facebook.com/caiodetz">
-              <BsFacebook size={24} color="#FFF" />
-            </TalkToMe.Link>
-            <TalkToMe.Link href="https://br.linkedin.com/in/caio-detz-927345187">
-              <BsLinkedin size={24} color="#FFF" />
+            
+            <TalkToMe.Link href="https://github.com/caiodetz">
+              <BsGithub size={24} color="#FFF" />
             </TalkToMe.Link>
           </TalkToMe.Links>
         </TalkToMe.Section>
@@ -51,7 +49,7 @@ export default function Home() {
             href={"https://miumiu.caiodetz.com"}
             title="Miu Miu App Flutter"
             src="https://miumiu.caiodetz.com/icons/Icon-512.png"
-            content="Um Aplivativo para Gerenciamento Comercial de uma Lojinha no Instagram @_miu.miu_0"
+            content="Um Aplivativo para Gerenciamento Comercial de uma Lojinha no Instagram @loja_miumiu"
           />
           <Works.Card
             href={"https://flutter.caiodetz.com"}
