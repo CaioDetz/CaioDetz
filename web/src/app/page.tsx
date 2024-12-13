@@ -13,7 +13,7 @@ export default function Home() {
       </div>
 
       <main className="container mx-auto max-w-[750px] px-4 py-8 grid grid-cols-2 gap-6">
-        <Card title="Me envie uma menssagem 👋🏻" href='https://whatsapp.caiodetz.com'>
+        <Card title="Me envie uma mensagem 👋🏻" href='https://whatsapp.caiodetz.com'>
           Clique aqui e entre em contato comigo para criarmos algo juntos.
         </Card>
         <Card title="Meu Perfil no Github 🚀" href='https://github.com/caiodetz'>
