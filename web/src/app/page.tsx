@@ -6,7 +6,7 @@ export default function Home() {
 
       <div className='container mx-auto px-24 py-4 text-center space-y-5'>
         <div className='w-48 h-48 mx-auto object-cover overflow-hidden rounded-full relative'>
-          <Image src={"/perfil.webp"} alt={"Pefil"} fill sizes='100%' />
+          <Image src={"/perfil.png"} alt={"Pefil"} fill sizes='100%' />
         </div>
         <h1 className='text-4xl font-semibold'>Caio Detz</h1>
         <h3 className='text-xl'>Programador at Sorriso, Brasil 🇧🇷</h3>
