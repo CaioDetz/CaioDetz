@@ -25,9 +25,9 @@ export default function Home() {
         <Card title="Harpia Development 🍂" href='https://harpiadev.org'>
           Minha empresa de desenvolvimento de software ainda está em construção.
         </Card>
-        <Card title="Zenji - Assosiação 🥋" href='https://zenji.vercel.app'>
+{/*         <Card title="Zenji - Assosiação 🥋" href='https://zenji.vercel.app'>
           A associação sem fins lucrativos de karatê da qual faço parte e apoio muito. Dá uma olhada lá, tem vários projetos legais 😃.
-        </Card>
+        </Card> */}
         <Card title="Meu Linkedin 💼" href='https://linkedin.com/in/caiodetz'>
           Um excelente lugar para acompanhar conteúdos mais profissionais.
         </Card>
